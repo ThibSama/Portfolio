@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Thibault Paul</title>
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="/View/images/Paul_Thibault_icon.jpeg"
+    />
+    <link rel="stylesheet" href="./View/dist/output.css" />
+    <script src="./View/JS/carrouselCompetences.js"></script>
+    <script src="./View/JS/veille.js"></script>
+  </head>
+
+  <body class="bg-sky-950 text-indigo-200 font-Merriweater_BoldItalic">
+    <!-- Section du logo et de la barre de navigation -->
+    <header class="flex justify-between items-center p-4 shadow">
+      <div class="flex items-center space-x-4">
+        <img
+          src="/View/images/Paul_Thibault_icon.jpeg"
+          alt="Logo"
+          id="logo"
+          class="object-cover object-center rounded-full h-14 w-14"
+        />
+        <a class="text-xl font-bold">Thibault PAUL</a>
+      </div>
+
+      <nav>
+        <ul class="flex space-x-4">
+          <li>
+            <a href="#competences" class="hover:text-indigo-600">Compétences</a>
+          </li>
+          <li>
+            <a href="#projets" class="hover:text-indigo-600">Projets</a>
+          </li>
+          <li>
+            <a href="#veille" class="hover:text-indigo-600">Veille</a>
+          </li>
+          <li>
+            <a href="#cv" class="hover:text-indigo-600">CV</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-indigo-600">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section de présentation -->
+    <section id="presentation" class="text-center p-8">
+      <img
+        src="chemin/vers/votre/photo.jpg"
+        alt="Photo de fond"
+        class="w-full h-auto"
+      />
+      <h1 class="text-3xl font-bold">Titre de présentation</h1>
+      <p class="text-base text-gray-600">
+        Description courte de la présentation.
+      </p>
+    </section>
+
+    <!-- Section des compétences -->
+    <section id="competences" class="py-8 px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">Mes compétences</h2>
+      <p class="text-md text-gray-600 text-center mb-10">
+        Voici un aperçu de mes compétences techniques.
+      </p>
+    </section>
+
+    <!-- Section des projets -->
+    <section id="projets" class="p-8">
+      <h2 class="text-2xl font-semibold">Mes projets</h2>
+      <p class="text-sm text-gray-600">Description des projets réalisés.</p>
+    </section>
+
+    <!-- Section de veille -->
+    <section id="veille" class="p-8">
+      <h2 class="text-2xl font-semibold mb-4">Veille technologique</h2>
+      <div class="flex">
+        <div class="flex-1">
+          <h3 class="font-semibold mb-2">Sujets de veille</h3>
+          <ul class="list-none space-y-4">
+            <li class="veille-topic" id="topic-blockchain">
+              <div class="flex items-center cursor-pointer select-none">
+                <span class="text-gray-600 mr-2">&#x203A;</span>Blockchain
+              </div>
+              <div
+                id="content-blockchain"
+                class="veille-content mt-4 pl-8 pr-6 w-auto opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-out"
+              >
+                La blockchain, aussi connue sous le nom de chaîne de blocs, est
+                une technologie de stockage et de transmission d'informations
+                sans organe de contrôle. Techniquement, il s'agit d'une base de
+                données distribuée dont les informations envoyées par les
+                utilisateurs et les liens internes à la base sont vérifiés et
+                groupés à intervalles de temps réguliers en blocs, l'ensemble
+                étant sécurisé par cryptographie. Chaque bloc ajouté vient
+                s'inscrire dans une chaîne de blocs, qui est en réalité un grand
+                livre comptable public, anonyme et infalsifiable.
+              </div>
+            </li>
+
+            <li class="veille-topic" id="topic-cybersecurity">
+              <div class="flex items-center cursor-pointer select-none">
+                <span class="text-gray-600 mr-2">&#x203A;</span>Cybersécurité
+              </div>
+              <div
+                id="content-cybersecurity"
+                class="veille-content mt-4 pl-8 pr-6 w-auto opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-out"
+              >
+                La cybersécurité est l'ensemble des moyens techniques,
+                organisationnels, juridiques et humains nécessaires pour
+                préserver la confidentialité, la disponibilité et l'intégrité
+                des données et des systèmes d'information. Elle vise à protéger
+                les systèmes informatiques, les réseaux et les données contre
+                les attaques, qu'elles viennent de l'intérieur ou de l'extérieur
+                de l'organisation.
+              </div>
+            </li>
+
+            <li class="veille-topic" id="topic-hardware">
+              <div class="flex items-center cursor-pointer select-none">
+                <span class="text-gray-600 mr-2">&#x203A;</span>Hardware
+              </div>
+              <div
+                id="content-hardware"
+                class="veille-content mt-4 pl-8 pr-6 w-auto opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-out"
+              >
+                Le matériel informatique, ou hardware, est l'ensemble des
+                éléments physiques qui constituent un ordinateur ou un système
+                informatique. Il comprend notamment les composants électroniques
+                (carte mère, processeur, mémoire vive, disque dur, etc.), les
+                périphériques (clavier, souris, écran, imprimante, etc.) et les
+                équipements de réseau (routeur, switch, etc.).
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="border-l-2 border-gray-300"></div>
+        <div class="pl-8 w-1/3">
+          <!-- Cette div peut être ajustée ou utilisée pour d'autres contenus si nécessaire -->
+          <h3 class="font-semibold mb-2">Les outils :</h3>
+          <ul class="list-none">
+            <li>Feedly</li>
+            <li>Substack</li>
+            <li>Podcast</li>
+            <li>Youtube</li>
+            <li>Twitter (Listes)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section du CV -->
+    <section id="cv" class="p-8">
+      <h2 class="text-2xl font-semibold mb-4">Mon CV</h2>
+      <div class="">
+        <a href="/View/images/cv/screen_cv.webp" target="_blank">
+          <img
+            src="/View/images/cv/screen_cv.webp"
+            class="rounded hover:shadow-lg hover:scale-105 transition-transform duration-500 ease-in-out cursor-pointer w-1/3 h-auto"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- Section contact -->
+    <section id="contact" class="p-8">
+      <h2 class="text-2xl font-semibold">Contactez-moi</h2>
+      <form
+        action="mailto:exemple@domaine.com"
+        method="post"
+        enctype="text/plain"
+        class="max-w-md mx-auto"
+      >
+        <div class="mb-4">
+          <label for="nom" class="block text-gray-700 text-sm font-bold mb-2"
+            >Nom:</label
+          >
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            required
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 text-sm font-bold mb-2"
+            >Email:</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label
+            for="message"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            >Message:</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            required
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Envoyer
+        </button>
+      </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="text-center text-gray-600 text-sm py-4">
+      <p>&copy; 2023 PAUL Thibault. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
