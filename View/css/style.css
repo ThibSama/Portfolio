@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Merriweather_BoldItalic';
+    src: url(../font/Merriweather/Merriweather-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Merriweather_Regular';
+    src: url(../font/Merriweather/Merriweather-Regular.ttf);
+}
+
+/* npx tailwindcss -i ./back/css/style.css -o ./back/dist/output.css --watch */
