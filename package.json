@@ -1,9 +1,12 @@
 {
   "scripts": {
-    "dev":"npx tailwindcss -i ./View/css/style.css -o ./View/dist/output.css --watch"
+    "watch": "npx tailwindcss -i public/css/style.css -o public/dist/output.css --watch"
   },
-  
   "devDependencies": {
     "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "slick-carousel": "^1.8.1"
   }
 }
