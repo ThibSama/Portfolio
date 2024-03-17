@@ -9,76 +9,188 @@
       type="image/jpeg"
       href="/public/images/Paul_Thibault_icon.jpeg"
     />
+
     <link rel="stylesheet" href="/public/css/output.css" type="text/css" />
-    <script src="/assets/js/carrouselCompetences.js"></script>
-    <script src="/assets/js/veille.js"></script>
-    <script src="/assets/js/contact.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <script defer src="/public/js/veille.js"></script>
+    <script defer src="/public/js/date.js"></script>
+    <script defer src="/public/js/etudes.js"></script>
   </head>
 
-  <body class="bg-sky-950 text-indigo-200 font-Merriweater_BoldItalic">
-    <!-- Section du logo et de la barre de navigation -->
-    <header class="flex justify-between items-center p-4 shadow">
-      <div class="flex items-center space-x-4">
-        <img
-          src="/public/images/Paul_Thibault_icon.jpeg"
-          alt="Logo"
-          id="logo"
-          class="object-cover object-center rounded-full h-14 w-14"
-        />
-        <a class="text-xl font-bold">Thibault PAUL</a>
-      </div>
+  <header class="flex text-customFont1 justify-between items-center p-4 shadow">
+    <div class="flex items-center space-x-4">
+      <img
+        src="/public/images/Paul_Thibault_icon.jpeg"
+        alt="Logo"
+        id="logo"
+        class="object-cover object-center rounded-full h-14 w-14"
+      />
+      <a class="text-xl font-bold">Thibault PAUL</a>
+    </div>
 
-      <nav>
-        <ul class="flex space-x-4">
-          <li>
-            <a href="#competences" class="hover:text-indigo-600">Compétences</a>
-          </li>
-          <li>
-            <a href="#projets" class="hover:text-indigo-600">Projets</a>
-          </li>
-          <li>
-            <a href="#veille" class="hover:text-indigo-600">Veille</a>
-          </li>
-          <li>
-            <a href="#cv" class="hover:text-indigo-600">CV</a>
-          </li>
-          <li>
-            <a href="#contact" class="hover:text-indigo-600">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul class="flex space-x-4">
+        <li>
+          <a href="#competences" class="hover:text-cyan-400">Compétences</a>
+        </li>
+        <li>
+          <a href="#veille" class="hover:text-cyan-400">Veille</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-cyan-400">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <body
+    id="#top"
+    class="bg-customBg text-customFont1 font-Merriweater_BoldItalic"
+  >
+    <!-- Section du logo et de la barre de navigation -->
 
     <!-- Section de présentation -->
-    <section id="presentation" class="text-center p-8">
-      <img
-        src="chemin/vers/votre/photo.jpg"
-        alt="Photo de fond"
-        class="w-full h-auto"
-      />
-      <h1 class="text-3xl font-bold">Titre de présentation</h1>
-      <p class="text-base text-gray-600">
-        Description courte de la présentation.
-      </p>
+    <section id="presentation" class="flex">
+      <div class="flex justify-between items-center p-12">
+        <div class="w-2/3 text-left rounded-lg p-4 bg-gray-300 text-black">
+          <p class="mb-8 leading-relaxed px-4 rounded-lg">
+            En plein parcours de ma deuxième année de BTS SIO (Services
+            Informatiques aux Organisations) avec une spécialisation en SLAM
+            (Solutions Logicielles et Applications Métiers), je m'engage à
+            poursuivre mes études en m'orientant vers un bachelor en
+            informatique, avec une spécialisation en développement, à Lille.
+            Passionné par les domaines variés de l'informatique, mes centres
+            d'intérêt s'étendent de la blockchain au hardware.
+          </p>
+
+          <p class="mb-8 leading-relaxed px-4">
+            Doté d'une grande capacité d'adaptation et d'une autonomie
+            développée, j'accorde une importance particulière à mon
+            épanouissement personnel et professionnel. Fort de diverses
+            expériences, j'ai acquis des compétences solides en travail d'équipe
+            et en communication, indispensables pour évoluer avec succès dans un
+            environnement collaboratif et dynamique.
+          </p>
+
+          <p class="mb-8 leading-relaxed px-4">
+            Animé par un désir constant d'apprentissage et de dépassement de
+            soi, je suis prêt à relever de nouveaux défis. Mon parcours atteste
+            de ma détermination et de ma capacité à évoluer dans des
+            environnements exigeants et en perpétuelle évolution.
+          </p>
+        </div>
+        <div class="w-1/3 flex justify-center items-center p-12">
+          <img src="" alt="Photo" class="rounded-lg" />
+        </div>
+      </div>
     </section>
 
+    <!-- Section des études -->
+    <section id="etudes" class="p-8">
+      <h2 class="text-3xl font-bold text-center mb-6">Mes études</h2>
+      <ul>
+        <li
+          class="topic-etudes bg-gray-300 text-black w-fit p-2 rounded-lg mb-2 overflow-hidden shadow-lg"
+          id="topic-sio"
+        >
+          <h3 class="font-bold mb-2 cursor-pointer select-none">
+            BTS SIO spécialité SLAM
+          </h3>
+          <div
+            class="etudes-content mt-4 pl-8 pr-6 w-auto opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-out"
+            id="content-sio"
+          >
+            <p class="text-sm font-semibold text-wrap mb-4">
+              Services Informatiques aux Organisations spécialitée Solutions
+              Logicielles et Applications Métiers
+            </p>
+            <p class="mb-4 p-4">
+              Le BTS SIO (Services Informatiques aux Organisations) avec
+              l'option SLAM (Solutions Logicielles et Applications Métiers) au
+              sein de l'ensemble LTPES Saint-Luc à Cambrai constitue une
+              passerelle vers le domaine du développement logiciel adapté aux
+              besoins spécifiques des entreprises.
+            </p>
+            <p class="p-4 mr-6">
+              Cette formation met l'accent sur la conception et l'implémentation
+              de solutions logicielles efficaces et sur mesure, destinées à
+              répondre aux défis opérationnels des organisations. Les étudiants
+              sont formés à maîtriser les différentes étapes du cycle de vie
+              d'un projet informatique, depuis l'analyse des besoins jusqu'à la
+              maintenance évolutive des applications.
+            </p>
+            <a href="https://ltpes.saintluc-cambrai.com/" target="_blank">
+              <img
+                src="/public/images/etudes/stluc.webp"
+                alt="LTPES Ensemble Saint-Luc de Cambrai"
+                class="rounded-md w-1/3"
+              />
+            </a>
+          </div>
+        </li>
+        <li
+          class="topic-etudes bg-gray-300 text-black w-fit p-2 rounded-lg mb-2 overflow-hidden shadow-lg"
+          id="topic-dcg"
+        >
+          <h3 class="font-bold mb-2 cursor-pointer select-none">DCG</h3>
+          <div
+            class="etudes-content mt-4 pl-8 pr-6 w-auto opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-out"
+            id="content-dcg"
+          >
+            <p class="mb-8">
+              Le DCG (Diplôme de Comptabilité et de Gestion) est un diplôme
+              national de l'enseignement supérieur français. Il atteste de
+              connaissances approfondies en comptabilité, finance, fiscalité,
+              droit, management et informatique. Il est délivré par le ministère
+              de l'Éducation nationale et est reconnu au niveau européen.
+            </p>
+          </div>
+        </li>
+
+        <li
+          class="topic-etudes bg-gray-300 text-black w-fit p-2 rounded-lg mb-2 overflow-hidden shadow-lg"
+          id="topic-stmg"
+        >
+          <h3 class="font-bold mb-2 cursor-pointer select-none">
+            BTS SIO spécialité SLAM
+          </h3>
+          <div
+            class="etudes-content mt-4 pl-8 pr-6 w-auto opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-out"
+            id="content-stmg"
+          >
+            <p class="mb-8">
+              Le baccalauréat STMG (Sciences et Technologies du Management et de
+              la Gestion) est un diplôme national de l'enseignement supérieur
+              français. Il forme des lycéens aux métiers de la gestion, de la
+              comptabilité, du marketing, de la communication et des ressources
+              humaines. Il est proposé en quatre spécialités : Gestion et
+              Finance, Mercatique, Ressources Humaines et Communication,
+              Systèmes d'Information de Gestion.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
     <!-- Section des compétences -->
     <section id="competences" class="py-8 px-4">
       <h2 class="text-3xl font-bold text-center mb-6">Mes compétences</h2>
       <div class="flex">
         <div class="flex-1">
           <ul class="list-none space-y-4">
-            <li class="certifications">Mook de l'ANSSI</li>
             <li class="certifications">L'atelier du RGPD</li>
             <li class="certifications">Certification Pix</li>
             <li class="certifications">Certification OpenClassRoom</li>
-            <li class="certifications">CryptoZombie</li>
           </ul>
         </div>
         <div class="block relative w-1/3">
           <img
             src="/public/images/cv/screen_cv.webp"
-            class="rounded w-auto transition duration-500 ease-in-out cursor-pointer"
+            class="rounded w-auto transition duration-300 ease-in-out cursor-pointer"
+            alt="Capture d'écran de mon CV"
           />
           <div
             class="absolute inset-0 bg-black bg-opacity-0 backdrop-blur-sm hover:bg-opacity-50 flex justify-center items-center rounded transition-opacity duration-500 opacity-0 hover:opacity-100"
@@ -96,63 +208,88 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
         <!-- Carte 1 -->
-        <div
-          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
-        >
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
           <a href="https://github.com/ThibSama/AP_SIO" target="_blank">
-            <img
-              class="rounded-t-lg"
-              src="public/images/projets/lpfs_logo.png"
-              alt="Projet d'Atelier Professionnel de fin de BTS"
-            />
-            <h3 class="text-black text-md font-semibold mt-2">
-              Projet d'Atelier Professionnel - LPFS Clinique
-            </h3>
+            <div class="transition duration-300 transform hover:scale-110">
+              <img
+                class="rounded-lg object-cover object-center h-48 w-full"
+                src="public/images/projets/lpfs_logo.webp"
+                alt="Projet d'Atelier Professionnel de fin de BTS"
+              />
+              <h3 class="text-black text-center text-md font-semibold mt-2">
+                Projet d'Atelier Professionnel - Clinique LPFS
+              </h3>
+            </div>
           </a>
         </div>
 
         <!-- Carte 2 -->
-        <div
-          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
-        >
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
           <a href="https://github.com/ThibSama/TP-Symfony" target="_blank">
-            <img
-              class="rounded-t-lg"
-              src="lien_vers_image_projet"
-              alt="TP Symfony"
-            />
-            <h3 class="text-lg font-semibold mt-2">TP Symfony</h3>
+            <div class="transition duration-300 transform hover:scale-110">
+              <img
+                class="rounded-lg object-contain"
+                src="public/images/projets/symfony.webp"
+                alt="TP Symfony"
+              />
+              <h3 class="text-black text-center text-md font-semibold mt-2">
+                TP Symfony
+              </h3>
+            </div>
           </a>
         </div>
 
         <!-- Carte 3 -->
-        <div
-          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
-        >
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
           <a
             href="https://github.com/ThibSama/TP-Site_Marchand"
             target="_blank"
           >
-            <img
-              class="rounded-t-lg"
-              src="lien_vers_image_projet"
-              alt="TP Site marchand"
-            />
-            <h3 class="text-lg font-semibold mt-2">TP Site marchand</h3>
+            <div class="transition duration-300 transform hover:scale-110">
+              <img
+                class="rounded-lg object-cover object-center h-48 w-full"
+                src="public/images/projets/laNouvelleAventuredeMrSerano.webp"
+                alt="TP Site marchand - La Nouvelle Aventure de Mr. Serano"
+              />
+              <h3 class="text-black text-center text-md font-semibold mt-2">
+                TP Site marchand - La Nouvelle Aventure de Mr. Serano
+              </h3>
+            </div>
           </a>
         </div>
 
         <!-- Carte 4 -->
-        <div
-          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
-        >
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg p-5">
           <a href="https://github.com/ThibSama" target="_blank">
-            <img
-              class="rounded-t-lg"
-              src="lien_vers_image_projet"
-              alt="Calculatrice Java"
-            />
-            <h3 class="text-lg font-semibold mt-2">Calculatrice Java</h3>
+            <div class="transition duration-300 transform hover:scale-110">
+              <img
+                class="rounded-lg object-contain"
+                src="public/images/projets/calculatrice.webp"
+                alt="Calculatrice Java"
+              />
+              <h3 class="text-black text-center text-md font-semibold">
+                Calculatrice Java
+              </h3>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="block relative w-1/3 mx-auto">
+        <img
+          src="/public/images/cv/exempleSynthese.webp"
+          alt="exemple de tableau de synthèse"
+          class="rounded w-auto transition duration-500 ease-in-out cursor-pointer"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-0 backdrop-blur-sm hover:bg-opacity-50 flex justify-center items-center rounded transition-opacity duration-500 opacity-0 hover:opacity-100"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+            class="bg-blue-500 text-white px-4 py-2 rounded"
+          >
+            Ouvrir le tableau de compétences
           </a>
         </div>
       </div>
@@ -165,7 +302,10 @@
         <div class="flex-1">
           <h3 class="font-semibold mb-2">Sujets de veille</h3>
           <ul class="list-none space-y-4">
-            <li class="veille-topic" id="topic-blockchain">
+            <li
+              class="veille-topic bg-white text-black rounded-lg p-4 cursor-pointer select-none"
+              id="topic-blockchain"
+            >
               <div class="flex items-center cursor-pointer select-none">
                 <span class="text-gray-600 mr-2">&#x203A;</span>Blockchain
               </div>
@@ -182,28 +322,79 @@
                 étant sécurisé par cryptographie. Chaque bloc ajouté vient
                 s'inscrire dans une chaîne de blocs, qui est en réalité un grand
                 livre comptable public, anonyme et infalsifiable.
+
+                <ul class="flex-col list-none">
+                  <li>
+                    <h4 class="font-semibold mb-2">Sources :</h4>
+                    <div class="flex">
+                      <a
+                        href="https://twitter.com/PowerHasheur"
+                        target="_blank"
+                        class="ml-4 transition duration-300 ease-in-out hover:text-blue-600 underline"
+                        >Hasheur</a
+                      >
+                      <a
+                        href="https://journalducoin.com/"
+                        target="_blank"
+                        class="ml-4 transition duration-300 ease-in-out hover:text-blue-600 underline"
+                        >Journal du coin</a
+                      >
+                      <a
+                        href="https://www.blockchain.com/explorer/news"
+                        target="_blank"
+                        class="ml-4 transition duration-300 ease-in-out hover:text-blue-600 underline"
+                        >Blockchain.com</a
+                      >
+                    </div>
+                  </li>
+                </ul>
               </div>
             </li>
 
-            <li class="veille-topic" id="topic-cybersecurity">
+            <li
+              class="veille-topic bg-white text-black rounded-lg p-4 cursor-pointer select-none"
+              id="topic-cybersecurity"
+            >
               <div class="flex items-center cursor-pointer select-none">
-                <span class="text-gray-600 mr-2">&#x203A;</span>Cybersécurité
+                <span class="text-gray-600 font-bold mr-2">&#x203A;</span
+                >Cybersécurité
               </div>
               <div
                 id="content-cybersecurity"
                 class="veille-content mt-4 pl-8 pr-6 w-auto opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-out"
               >
-                La cybersécurité est l'ensemble des moyens techniques,
-                organisationnels, juridiques et humains nécessaires pour
-                préserver la confidentialité, la disponibilité et l'intégrité
-                des données et des systèmes d'information. Elle vise à protéger
-                les systèmes informatiques, les réseaux et les données contre
-                les attaques, qu'elles viennent de l'intérieur ou de l'extérieur
-                de l'organisation.
+                <ul class="flex-col list-none">
+                  <li>
+                    <h4 class="font-semibold mb-2">Sources :</h4>
+                    <div class="flex">
+                      <a
+                        href="https://www.youtube.com/@Micode"
+                        target="_blank"
+                        class="ml-4 transition duration-300 ease-in-out hover:text-blue-600"
+                        >@Micode</a
+                      >
+                      <a
+                        href="https://www.zataz.com/"
+                        target="_blank"
+                        class="ml-4 transition duration-300 ease-in-out hover:text-blue-700"
+                        >Zataz</a
+                      >
+                      <a
+                        href="https://www.cert.ssi.gouv.fr/"
+                        target="_blank"
+                        class="ml-4 transition duration-300 ease-in-out hover:text-blue-700"
+                        >CERT</a
+                      >
+                    </div>
+                  </li>
+                </ul>
               </div>
             </li>
 
-            <li class="veille-topic" id="topic-hardware">
+            <li
+              class="veille-topic bg-white text-black rounded-lg p-4 cursor-pointer select-none"
+              id="topic-hardware"
+            >
               <div class="flex items-center cursor-pointer select-none">
                 <span class="text-gray-600 mr-2">&#x203A;</span>Hardware
               </div>
@@ -211,101 +402,221 @@
                 id="content-hardware"
                 class="veille-content mt-4 pl-8 pr-6 w-auto opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-out"
               >
-                Le matériel informatique, ou hardware, est l'ensemble des
-                éléments physiques qui constituent un ordinateur ou un système
-                informatique. Il comprend notamment les composants électroniques
-                (carte mère, processeur, mémoire vive, disque dur, etc.), les
-                périphériques (clavier, souris, écran, imprimante, etc.) et les
-                équipements de réseau (routeur, switch, etc.).
+                <ul class="flex-col list-none">
+                  <li>
+                    <h4 class="font-semibold mb-2">Sources :</h4>
+                    <div class="flex">
+                      <a
+                        href="https://www.cowcotland.com/"
+                        target="_blank"
+                        class="ml-4 transition duration-300 ease-in-out hover:text-blue-600"
+                        >Cowcotland</a
+                      >
+                      <a
+                        href="https://www.tomshardware.fr/"
+                        target="_blank"
+                        class="ml-4 transition duration-300 ease-in-out hover:text-blue-600"
+                        >Tom's Hardware</a
+                      >
+                      <a
+                        href="https://www.lesnumeriques.com/"
+                        target="_blank"
+                        class="ml-4 transition duration-300 ease-in-out hover:text-blue-600"
+                        >Les Numériques</a
+                      >
+                    </div>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
 
-        <div class="border-l-2 border-gray-300"></div>
+        <div class="ml-4 border-l-2 border-customFont1"></div>
         <div class="pl-8 w-1/3">
           <h3 class="font-semibold mb-2">Les outils :</h3>
-          <ul class="list-none">
+          <ul
+            class="list-none bg-white rounded-lg w-fit text-black text-center p-4"
+          >
             <li>Feedly</li>
-            <li>Substack</li>
             <li>Podcast</li>
-            <li>Youtube</li>
-            <li>Twitter (Listes)</li>
           </ul>
+        </div>
+      </div>
+
+      <!-- Articles -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+        <!-- Carte 1 -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
+        >
+          <a
+            href="https://www.01net.com/actualites/tpm-2-0-a-quoi-sert-cette-technologieindispensable-pour-passer-a-windows-11-2045268.html"
+            target="_blank"
+          >
+            <img
+              class="rounded-lg object-cover object-center h-48 w-full"
+              src="https://www.01net.com/app/uploads/2021/06/chiffrement-1256-1-1024x577.jpg"
+              alt=""
+            />
+            <h3 class="text-black text-sm font-semibold mt-2">
+              01net - TPM 2.0 : à quoi sert cette technologie indispensable pour
+              passer à Windows 11 ?
+            </h3>
+          </a>
+        </div>
+
+        <!-- Carte 2 -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
+        >
+          <a
+            href="https://www.zataz.com/une-cyberattaque-majeure-touche-20-millions-dassures-de-complementaires-sante-en-france/"
+            target="_blank"
+          >
+            <img
+              class="rounded-lg object-cover object-center h-48 w-full"
+              src="https://www.zataz.com/wp-content/uploads/complementaire-sante-leak-fuite-595x240.jpg"
+              alt=""
+            />
+            <h3 class="text-black text-sm font-semibold mt-2">
+              ZATAZ - Une cyberattaque majeure touche 20 millions d’assurés de
+              complémentaires santé en France
+            </h3>
+          </a>
+        </div>
+
+        <!-- Carte 3 -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
+        >
+          <a
+            href="https://www.cowcotland.com/news/90447/gpu-nvidia-blackwell-b100-en-2024-et-b200-en-2025.html"
+            target="_blank"
+          >
+            <img
+              class="rounded-lg object-cover object-center h-48 w-full"
+              src="https://www.cowcotland.com/images/news/2024/03/big/nvidia-blackwell-b100-b200.jpg"
+              alt=""
+            />
+            <h3 class="text-black text-sm font-semibold mt-2">
+              Cowcotland - GPU NVIDIA Blackwell, B100 en 2024 et B200 en 20253
+            </h3>
+          </a>
+        </div>
+
+        <!-- Carte 4 -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
+        >
+          <a
+            href="https://videocardz.com/newz/amd-x86-core-roadmap-leaks-out-zen5-nirvana-zen6-morpheus-microarchitectures-detailed"
+            target="_blank"
+          >
+            <img
+              class="rounded-lg object-cover object-center h-48 w-full"
+              src="https://cdn.videocardz.com/1/2023/09/AMD-ZEN5-ZEN6-ARCHITECTURES-2048x1152.jpg"
+              alt=""
+            />
+            <h3 class="text-black text-sm font-semibold mt-2">
+              VideoCardz - AMD x86 core roadmap leaks out
+            </h3>
+          </a>
+        </div>
+
+        <!-- Carte 5 -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
+        >
+          <a href="LIEN_VERS_VOTRE_ARTICLE" target="_blank">
+            <img
+              class="rounded-lg object-cover object-center h-48 w-full"
+              src="URL_DE_VOTRE_IMAGE"
+              alt=""
+            />
+            <h3 class="text-black text-sm font-semibold mt-2">
+              TITRE_DE_VOTRE_ARTICLE
+            </h3>
+          </a>
+        </div>
+
+        <!-- Carte 6 -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-lg p-5 transition duration-300 transform hover:shadow-xl hover:scale-110"
+        >
+          <a
+            href="https://www.cointribune.com/web3-security-summit-le-nouvel-evenement-associe-au-forum-incyber-26-mars-2024-lille-grand-palais/"
+            target="_blank"
+          >
+            <img
+              class="rounded-lg object-cover object-center h-48 w-full"
+              src="https://www.cointribune.com/app/uploads/2024/03/telechargement.jpeg"
+              alt=""
+            />
+            <h3 class="text-black text-sm font-semibold mt-2">
+              Web3 Security summit 2024
+            </h3>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Section contact -->
-    <section id="contact" class="p-8">
-      <h2 class="text-2xl font-semibold">Contactez-moi !</h2>
-      <form
-        action="mailto:exemple@domaine.com"
-        method="post"
-        enctype="text/plain"
-        class="w-2/3 mx-auto"
+    <div class="relative">
+      <a href="#top" class="">
+        <i
+          class="fas fa-arrow-up fa-1x hover:text-gray-700 opacity-30 hover:opacity-90 hover:scale-110 fixed bottom-0 left-0 p-4 bg-gray-400 rounded-md ml-4 mb-4 transition duration-500 ease-in-out"
+        ></i>
+      </a>
+
+      <div
+        class="fixed bottom-0 right-0 p-4 bg-gray-400 opacity-40 hover:opacity-90 mr-4 mb-4 rounded-md hover:scale-125 transition duration-400 ease-in-out"
       >
-        <div class="mb-4">
-          <label for="nom" class="block text-gray-400 text-sm font-bold mb-2"
-            >Nom:
-            <span class="text-red-500">*</span>
-          </label>
-          <input
-            type="text"
-            id="nom"
-            name="nom"
-            required
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-          />
-        </div>
-
-        <div class="mb-4">
-          <label for="email" class="block text-gray-400 text-sm font-bold mb-2"
-            >Email:
-            <span class="text-red-500">*</span>
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-          />
-        </div>
-
-        <div class="mb-4">
-          <label
-            class="text-gray-400 text-sm font-bold mb-2 flex inline-bloc"
-            for="message"
-          >
-            Message:
-            <span class="text-red-500">*</span>
-            <span id="characterCount" class="text-gray-400 ml-4 opacity-50"
-              >0</span
-            >
-            <p class="text-gray-400 opacity-50">/2048 caractères</p>
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            maxlength="2048"
-            required
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          class="bg-indigo-600 hover:bg-indigo-700 transition duration-500 text-white font-bold py-2 px-4 rounded"
+        <a
+          href="mailto:thblt@gmail.com"
+          target="_blank"
+          class="text-indigo-600 hover:text-indigo-800 mr-4"
         >
-          Envoyer
-        </button>
-      </form>
-    </section>
+          <i
+            class="fas fa-envelope fa-1x hover:scale-150 transition duration-300 ease-in-out"
+          ></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/thbltpaul/"
+          target="_blank"
+          class="text-indigo-600 hover:text-indigo-800 mr-4"
+        >
+          <i
+            class="fab fa-linkedin fa-1x hover:scale-150 transition duration-300 ease-in-out"
+          ></i>
+        </a>
+        <a
+          href="https://github.com/ThibSama"
+          target="_blank"
+          class="text-indigo-600 hover:text-indigo-800"
+        >
+          <i
+            class="fab fa-github fa-1x hover:scale-150 transition duration-300 ease-in-out"
+          ></i>
+        </a>
+      </div>
 
-    <!-- Pied de page -->
-    <footer class="text-center text-gray-600 text-sm py-4">
-      <p>&copy; 2023 PAUL Thibault. Tous droits réservés.</p>
-    </footer>
+      <!-- Pied de page -->
+      <footer
+        class="text-gray-600 text-sm p-8 shadow-xl border-t-2 border-gray-300 bg-gray-900"
+        id="footer"
+      >
+        <div>
+          <p
+            class="hover:text-white w-fit text-lg transition duration-300 ease-in-out"
+          >
+            thbltpaul@gmail.com
+          </p>
+          <p class="text-center font-bold select-none text-xl">
+            &copy; <span id="currentYear"></span> PAUL Thibault. Tous droits
+            réservés.
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

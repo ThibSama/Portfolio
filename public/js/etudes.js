@@ -1,8 +1,7 @@
-console.log("bite veille");
 document.addEventListener("DOMContentLoaded", function () {
-  var veilleTopics = document.querySelectorAll(".veille-topic");
+  var etudesTopics = document.querySelectorAll(".topic-etudes");
 
-  veilleTopics.forEach(function (topic) {
+  etudesTopics.forEach(function (topic) {
     topic.addEventListener("click", function () {
       var contentId = "content-" + this.id.split("-")[1];
       var contentDiv = document.getElementById(contentId);
