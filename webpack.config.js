@@ -8,6 +8,7 @@ module.exports = {
     etudes: "./public/js/etudes.js",
     veille: "./public/js/veille.js",
     font: "./public/js/font.js",
+    navbar: "./public/js/navbar.js",
   },
   output: {
     path: path.resolve(__dirname, "dist/"),
