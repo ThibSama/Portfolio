@@ -1,17 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var etudesTopics = document.querySelectorAll(".topic-etudes");
+  var titleElements = document.querySelectorAll(
+    "[id^='title-'], [id^='close-']"
+  );
 
-  etudesTopics.forEach(function (topic) {
-    topic.addEventListener("click", function () {
+  titleElements.forEach(function (title) {
+    title.addEventListener("click", function () {
       var contentId = "content-" + this.id.split("-")[1];
       var contentDiv = document.getElementById(contentId);
 
-      if (contentDiv.classList.contains("opacity-0")) {
-        contentDiv.classList.remove("opacity-0", "max-h-0");
-        contentDiv.classList.add("opacity-100", "max-h-screen");
+      if (contentDiv.classList.contains("max-h-0")) {
+        contentDiv.classList.remove("max-h-0", "opacity-0");
+        contentDiv.classList.add("max-h-[400px]", "opacity-100");
       } else {
-        contentDiv.classList.remove("opacity-100", "max-h-screen");
-        contentDiv.classList.add("opacity-0", "max-h-0");
+        contentDiv.classList.remove("max-h-[400px]", "opacity-100");
+        contentDiv.classList.add("max-h-0", "opacity-0");
       }
     });
   });
